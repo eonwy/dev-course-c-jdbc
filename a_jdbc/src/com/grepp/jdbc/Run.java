@@ -13,8 +13,8 @@ public class Run {
         MemberDao dao = new MemberDao();
         //insert(dao);
         //select(dao);
-        update(dao);
-        //delete(dao);
+        //update(dao);
+        delete(dao);
     }
 
     private static void delete(MemberDao dao) {
@@ -27,7 +27,7 @@ public class Run {
     private static void update(MemberDao dao) {
         MemberDto dto = new MemberDto();
         //dto.setUserId("a' or 1=1 or user_id = 'a");
-        //dto.setPassword("ㅋㅋㅋㅋㅋㅋㅋ");
+        dto.setPassword("ㅋㅋㅋㅋㅋㅋㅋ");
         //dto.setPassword("1111");
         System.out.println(dao.update(dto));
     }
@@ -38,7 +38,7 @@ public class Run {
 
     private static void insert(MemberDao dao) {
         MemberDto dto = new MemberDto();
-        dto.setUserId("hmd");
+        dto.setUserId("a");
         dto.setPassword("9999");
         dto.setEmail("test@gmail.com");
         dto.setTell("010-2222-3333");
